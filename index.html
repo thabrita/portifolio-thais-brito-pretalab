@@ -8,14 +8,15 @@
     <title>Portifólio Thaís Brito</title>
     <link rel="shortcut icon" href="img/foto-perfil.jpeg">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="header-menu">
         <!-- Este é o cabeçalho do site -->
         <nav>
-            <ul>
+            <ul class="lista-menu">
                 <li>
                     <a href="#formacao">Formação</a>
                 </li>
@@ -33,101 +34,113 @@
 
     <main>
         <!-- Este é o corpo do site -->
-        <section>
-            <div>
-                <img src="img/foto-perfil.jpeg">
-            </div>
+        <section class="principal">
+            <div class="subcontainer-principal container">
+                <div>
+                    <img src="img/foto-perfil.jpeg">
+                </div>
 
-            <div>
-                <h1>Thaís Brito</h1>
-                <h2>Desenvolvedora Web</h2>
-            </div>
+                <div>
+                    <h1 class="nome-completo">Thaís Brito</h1>
+                    <h2 class="profissao">Desenvolvedora Web</h2>
+                </div>
 
-            <div>
-                <p>
-                Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit
-                non. Nam vulputate dapibus.In elementis mé pra quem é amistosis quis leo.Leite de capivaris, leite de
-                mula manquis sem cabeça.Mé faiz elementum girarzis, nisi eros vermeio.
-                </p>
-            </div>
-        </section>
-
-        <section id="formacao">
-            <div>
-                Formação
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <p>Ciclo Formativo Pretalab</p>
-                        <a href="https://www.pretalab.com/formacao" target="_blank">Pretalab</a>
-                        <p>
-                            O ciclo formativo em tecnologia da PretaLab possui uma metodologia autoral que
-                            engloba o desenvolvimento do conhecimento técnico, autogestão e soft skills das
-                            estudantes.
-                        </p>
-                    </li>
-
-                    <li>
-                        <p>Ensino médio</p>
-                        <a href="http://www.educacao.sp.gov.br/cgrh/escolas/william-aureli/" target="_blank">E.E Willian
-                            Aurelli</a>
-                        <p>
-                            Ensino médio concluído no ano de 2012.
-                        </p>
-                    </li>
-                </ul>
+                <div class="texto-sobre">
+                    <p>
+                        Olá, me chamo Thaís Brito, tenho 27 anos, nasci na cidade de Campina Grande/PB, mas me mudei
+                        ainda criança e atualmente moro em Bertioga/SP. Sempre tive facilidade e interesse em
+                        tecnologia, mas achava um objetivo distante. Através de pessoas próximas, descobri que é
+                        possível e atualmente estou estudando para ser Desenvolvedora Front-End. Estudar tecnologia é
+                        desafiador e isso me motiva todos os dias.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="projetos">
-            <div>
-                Meus projetos
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <p>Calculadora</p>
-                        <a href="#" target="_blank">Calculadora em Javascript</a>
-                        <p>
-                            Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut
-                            interdum diam laoreet. Sed non consequat odio.Sapien in monti palavris qui num significa
-                            nadis i pareci latim.Casamentiss faiz malandris se pirulitá.Pra lá , depois divoltis porris,
-                            paradis.
-                        </p>
-                    </li>
+        <section class="formacao" id="formacao">
+            <div class="container section-lista">
+                <div>
+                    <h3 class="topico-principal">Formação</h3>
+                </div>
+                <div>
+                    <ul class="lista-item">
+                        <li>
+                            <p class="lista-titulo">Ciclo Formativo Pretalab</p>
+                            <a href="https://www.pretalab.com/formacao" target="_blank" class="lista-local">Pretalab</a>
+                            <p class="lista-descricao">
+                                O ciclo formativo em tecnologia da PretaLab possui uma metodologia autoral que
+                                engloba o desenvolvimento do conhecimento técnico, autogestão e soft skills das
+                                estudantes. <b>Aprendizado:</b> HTML, CSS, Javascript e React. <b>Duração:</b> 08/22 a 12/22.
+                            </p>
+                        </li>
 
-                    <li>
-                        <p>Projeto pessoal React</p>
-                        <a href="#" target="_blank">Projeto de React</a>
-                        <p>
-                            Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut
-                            interdum diam laoreet. Sed non consequat odio.Sapien in monti palavris qui num significa
-                            nadis i pareci latim.Casamentiss faiz malandris se pirulitá.Pra lá , depois divoltis porris,
-                            paradis.
-                        </p>
-                    </li>
-                </ul>
+                        <li>
+                            <p class="lista-titulo">Ensino médio</p>
+                            <a href="http://www.educacao.sp.gov.br/cgrh/escolas/william-aureli/" target="_blank"
+                                class="lista-local">E.E Willian
+                                Aurelli</a>
+                            <p class="lista-descricao">
+                                Ensino médio concluído no ano de 2012.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <div class="container section-lista">
+                <div>
+                    <h3 class="topico-principal">Meus projetos</h3>
+                </div>
+                <div class="lista-item">
+                    <ul>
+                        <li>
+                            <p class="lista-titulo">Calculadora</p>
+                            <a href="#" target="_blank" class="lista-local">Calculadora em Javascript</a>
+                            <p class="lista-descricao">
+                                Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut
+                                interdum diam laoreet. Sed non consequat odio.Sapien in monti palavris qui num significa
+                                nadis i pareci latim.Casamentiss faiz malandris se pirulitá.Pra lá , depois divoltis
+                                porris,
+                                paradis.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="lista-titulo">Projeto pessoal React</p>
+                            <a href="#" target="_blank" class="lista-local">Projeto de React</a>
+                            <p class="lista-descricao">
+                                Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut
+                                interdum diam laoreet. Sed non consequat odio.Sapien in monti palavris qui num significa
+                                nadis i pareci latim.Casamentiss faiz malandris se pirulitá.Pra lá , depois divoltis
+                                porris,
+                                paradis.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="footer" id="contato">
         <!-- Este é o rodapé do site -->
-        <div id="contato">
-            <ul>
+        <div class="container-footer">
+            <ul class="lista-footer">
                 <li>
-                    <i class="fas fa-envelope-square"></i>
-                    <a href="mailto:britothais30@gmail.com">britothais30@gmail.com</a>
+                    <i class="fas fa-envelope-square estilo-icon"></i>
+                    <a href="mailto:britothais30@gmail.com" target="_blank" class="links">britothais30@gmail.com</a>
                 </li>
                 <li>
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/tha%C3%ADs-brito-02774111a/" target="_blank">thais-brito</a>
+                    <i class="fab fa-linkedin estilo-icon"></i>
+                    <a href="https://www.linkedin.com/in/tha%C3%ADs-brito-02774111a/" target="_blank"
+                        class="links">thais-brito</a>
                 </li>
                 <li>
-                    <i class="fab fa-github-square"></i>
-                    <a href="https://github.com/thabrita" target="_blank">thabrita</a>
+                    <i class="fab fa-github-square estilo-icon"></i>
+                    <a href="https://github.com/thabrita" target="_blank" class="links">thabrita</a>
                 </li>
             </ul>
         </div>
